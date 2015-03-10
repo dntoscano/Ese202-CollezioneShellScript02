@@ -6,3 +6,9 @@
 #
 # Questo script crea, in ogni sottodirectory della directory corrente, un file chiamato "passaggio.txt" che contiene la data in cui e' stato creato
 # 
+
+x=`ls -d */`
+for x in $x
+do
+	date > $x/passaggio.txt
+done
